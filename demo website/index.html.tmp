@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>iUB - AI Mental Health & Wellness</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="assets/css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home"><i class="bi bi-heart-pulse-fill text-primary"></i> iUB</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sections">Sections</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-2"><a class="nav-link btn btn-outline-light" href="users.html">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header id="home" class="hero-section d-flex align-items-center" style="padding-top:88px;">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 animate-fadeInUp">
+          <h1 class="fw-bold mb-3">AI-Powered Mental Health & Wellness</h1>
+          <p class="lead mb-4">iUB combines compassionate care with intelligent insights — mood tracking, progress analytics, AI-assisted guidance and crisis support all in one place.</p>
+          <div class="d-flex gap-3 flex-wrap">
+            <a href="#sections" class="btn btn-primary btn-lg">Explore Sections</a>
+            <a href="users.html" class="btn btn-outline-secondary btn-lg">Sign in</a>
+          </div>
+          <ul class="list-unstyled mt-4 d-flex gap-4">
+            <li class="small text-muted"><i class="bi bi-check2-circle text-primary"></i> Personalized insights</li>
+            <li class="small text-muted"><i class="bi bi-check2-circle text-primary"></i> Professional support</li>
+          </ul>
+        </div>
+        <div class="col-lg-6 animate-fadeInUp text-center">
+          <img src="https://placehold.co/560x360/9ad3ff/ffffff.png?text=iUB+Illustration" alt="iUB illustration" class="img-fluid rounded-3 shadow-lg">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Features -->
+  <section id="features" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">What we offer</h2>
+      <p class="text-center text-muted mb-5">Tools and services designed to support mental wellness — accessible, private, and data-informed.</p>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <i class="bi bi-people display-4 mb-3"></i>
+              <h4>Counsellor Directory</h4>
+              <p>Find and connect with professional counsellors matched to your needs.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <i class="bi bi-bar-chart-line display-4 mb-3"></i>
+              <h4>Progress Tracking</h4>
+              <p>Visualize mood & progress over time with easy-to-read charts.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <i class="bi bi-robot display-4 mb-3"></i>
+              <h4>AI Insights</h4>
+              <p>Receive personalized recommendations and automated analysis.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sections Grid -->
+  <section id="sections" class="py-5 bg-light">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="mb-0">Sections</h2>
+        <p class="mb-0 text-muted">Open any area to manage data, view charts and reports.</p>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <a class="text-decoration-none" href="dailyLogs.html">
+            <div class="card h-100">
+              <div class="card-body">
+                <i class="bi bi-journal-text fs-1 text-primary"></i>
+                <h5 class="mt-3">Daily Logs</h5>
+                <p class="text-muted small">Mood, sleep, and journaling entries.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <a class="text-decoration-none" href="users.html">
+            <div class="card h-100">
+              <div class="card-body">
+                <i class="bi bi-person-lines-fill fs-1 text-primary"></i>
+                <h5 class="mt-3">Users</h5>
+                <p class="text-muted small">User profiles and contact info.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <a class="text-decoration-none" href="counsellors.html">
+            <div class="card h-100">
+              <div class="card-body">
+                <i class="bi bi-person-badge fs-1 text-primary"></i>
+                <h5 class="mt-3">Counsellors</h5>
+                <p class="text-muted small">Specializations and schedules.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <a class="text-decoration-none" href="sessions.html">
+            <div class="card h-100">
+              <div class="card-body">
+                <i class="bi bi-calendar-check fs-1 text-primary"></i>
+                <h5 class="mt-3">Sessions</h5>
+                <p class="text-muted small">Appointments & session notes.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <a class="text-decoration-none" href="feedback.html">
+            <div class="card h-100">
+              <div class="card-body">
+                <i class="bi bi-chat-left-text fs-1 text-primary"></i>
+                <h5 class="mt-3">Feedback</h5>
+                <p class="text-muted small">Post-session ratings and comments.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <a class="text-decoration-none" href="progress.html">
+            <div class="card h-100">
+              <div class="card-body">
+                <i class="bi bi-graph-up-arrow fs-1 text-primary"></i>
+                <h5 class="mt-3">Progress</h5>
+                <p class="text-muted small">Improvement metrics & charts.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <a class="text-decoration-none" href="recommendations.html">
+            <div class="card h-100">
+              <div class="card-body">
+                <i class="bi bi-lightning-charge fs-1 text-primary"></i>
+                <h5 class="mt-3">Recommendations</h5>
+                <p class="text-muted small">Personalized wellness tips.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <a class="text-decoration-none" href="aiAnalysis.html">
+            <div class="card h-100">
+              <div class="card-body">
+                <i class="bi bi-cpu-fill fs-1 text-primary"></i>
+                <h5 class="mt-3">AI Analysis</h5>
+                <p class="text-muted small">Automated sentiment & pattern analysis.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <a class="text-decoration-none" href="crisisAlerts.html">
+            <div class="card h-100">
+              <div class="card-body">
+                <i class="bi bi-exclamation-triangle-fill fs-1 text-danger"></i>
+                <h5 class="mt-3">Crisis Alerts</h5>
+                <p class="text-muted small">Real-time alerts and escalation.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <a class="text-decoration-none" href="emergencyContacts.html">
+            <div class="card h-100">
+              <div class="card-body">
+                <i class="bi bi-telephone-fill fs-1 text-primary"></i>
+                <h5 class="mt-3">Emergency Contacts</h5>
+                <p class="text-muted small">Local resources and hotlines.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h3>About iUB</h3>
+          <p class="text-muted">iUB is an integrated platform focused on improving mental health outcomes through data-driven insights and human-centred design.</p>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-check2 text-primary me-2"></i>Secure & private by design</li>
+            <li><i class="bi bi-check2 text-primary me-2"></i>Evidence-based recommendations</li>
+            <li><i class="bi bi-check2 text-primary me-2"></i>Accessible anywhere, anytime</li>
+          </ul>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="https://placehold.co/520x320/ffffff/0066ff.png?text=Illustration" alt="about" class="img-fluid rounded-3 shadow">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-5 bg-white">
+    <div class="container text-center">
+      <h3>Contact</h3>
+      <p class="text-muted">Questions? Reach out to our support team.</p>
+      <p class="mb-1"><strong>Email:</strong> support@iub-wellness.com</p>
+      <p><strong>Phone:</strong> +1 (800) 123-4567</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4 bg-light">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div>
+        <strong>iUB</strong>
+        <div class="small text-muted">AI Mental Health & Wellness — 2025</div>
+      </div>
+      <div class="small text-muted">Made with care • <a href="#" class="text-decoration-none">Privacy</a></div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/dashboard.js"></script>
+</body>
+</html>
