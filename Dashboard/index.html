@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>DBMS · AI Mental Health Dashboard</title>
+		<link rel="stylesheet" href="assets/css/styles.css" />
+	</head>
+	<body>
+		<header class="topbar">
+			<div class="brand">
+				<h1>DBMS · AI Mental Health & Wellness</h1>
+				<p class="muted small">Demo dashboard and user tools</p>
+			</div>
+			<nav class="main-nav">
+				<button class="navlink active" data-target="home-section">Home</button>
+				<button class="navlink" data-target="user-section">User</button>
+			</nav>
+		</header>
+
+		<main class="container">
+			<!-- Home section: about the website -->
+			<section id="home-section" class="panel home">
+				<h2>About this project</h2>
+				<p>This repository contains a minimal static demo for a DBMS-backed AI-powered mental health and wellness project. The dashboard shows sample DB statistics, engagement/mood trends and a placeholder AI mood analyzer.</p>
+				<p>Intended usage: local preview, design iteration, and demonstrating where integrations (database, model API) should be connected. No production clinical inference is performed here.</p>
+				<h3 class="muted">Quick links</h3>
+				<ul>
+					<li>Dashboard: available under <strong>User → Dashboard</strong></li>
+				</ul>
+			</section>
+
+					<!-- User section: contains the dashboard and mood analyzer -->
+					<section id="user-section" class="panel user" hidden>
+						<h2>User Page</h2>
+						<p class="muted">Welcome — use the tools below to check your mood and recent activity.</p>
+
+						<section class="cards">
+							<div class="card">
+								<h3>Database Tables</h3>
+								<p class="big" id="tables-count">6</p>
+								<small class="muted">Schemas: users, sessions, assessments, notes, interventions, logs</small>
+							</div>
+							<div class="card">
+								<h3>Total Records</h3>
+								<p class="big" id="rows-count">12,480</p>
+								<small class="muted">Approximate sample data</small>
+							</div>
+							<div class="card">
+								<h3>AI Model</h3>
+								<p class="big" id="model-status">Ready</p>
+								<small class="muted">Sentiment & triage heuristics (local demo)</small>
+							</div>
+						</section>
+
+						<section class="panel">
+							<h2>Engagement & Mood Trend</h2>
+							<canvas id="trendChart" height="120"></canvas>
+						</section>
+
+						<section class="panel two-col">
+							<div>
+								<h2>AI-powered Mood Analyzer (demo)</h2>
+								<textarea id="moodInput" placeholder="Describe how you're feeling or paste a short journal entry..." rows="6"></textarea>
+								<div class="row">
+									<button id="analyzeBtn">Analyze</button>
+									<div id="analysisResult" class="analysis muted">No analysis yet.</div>
+								</div>
+							</div>
+
+							<div>
+								<h2>Recent Logs</h2>
+								<table id="logsTable">
+									<thead><tr><th>Time</th><th>Event</th><th>Note</th></tr></thead>
+									<tbody>
+										<tr><td>2025-10-20 09:12</td><td>ingest</td><td>users.csv imported</td></tr>
+										<tr><td>2025-10-22 14:50</td><td>model</td><td>sentiment v0.1 evaluated</td></tr>
+									</tbody>
+								</table>
+							</div>
+						</section>
+					</section>
+
+			<footer class="foot muted">
+				<small>Promt : <code>We always look after you mood, if you cant come to us </code></small>
+			</footer>
+		</main>
+
+		<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+		<script src="assets/js/dashboard.js"></script>
+	</body>
+</html>
